@@ -1,6 +1,7 @@
 <p align="center">
   <img src="images/banner.png" alt="Malaria Detection with Deep Learning" width="100%">
 </p>
+
 # 🦠 Malaria Detection from Blood Cell Images using CNN
 
 **Executive Summary**  
