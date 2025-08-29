@@ -1,12 +1,12 @@
 
-# 🦠 Malaria Detection from Blood Cell Images using CNN
+# Malaria Detection from Blood Cell Images using CNN
 
 **Executive Summary**  
 This project demonstrates how deep learning can accelerate malaria diagnosis by automatically classifying red blood cell images as **Parasitized** or **Uninfected**. Using ~27,500 labeled microscopy tiles, I benchmarked multiple CNN architectures and achieved **92% test accuracy** with a **VGG16 transfer learning model**, maintaining high recall (93%) for parasitized cells — a clinical priority. The pipeline is designed for **reproducibility, deployment feasibility, and ethical transparency**, with model cards, CLI inference, and GitHub Actions CI included. This work was completed as part of the **MIT Applied Data Science Program Capstone (Aug 2025)**.
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 - **Source:** NIH Malaria Dataset (27,558 thin smear RBC images)  
 - **Splits:** ~24,958 train / 2,600 test images  
@@ -23,7 +23,7 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 
 ---
 
-## 🏗️ Models Trained
+## Models Trained
 
 - **Base CNN**: baseline, mild overfitting mid-training  
 - **Model 1**: deeper CNN, higher peak, earlier overfit  
@@ -33,7 +33,7 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 
 ---
 
-## 📋 Results Summary
+## Results Summary
 
 | Model       | Test Accuracy | Parasitized Recall | Precision | AUC (est.) | Notes |
 |-------------|---------------|--------------------|-----------|------------|-------|
@@ -45,7 +45,7 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 
 ---
 
-## 📈 Training Performance
+## Training Performance
 
 ### Individual Models
 - Model 1: ![Model 1 Accuracy](Images/Model1_Accuracy-Validation_Curves.png)  
@@ -58,7 +58,7 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 
 ---
 
-## ✅ Evaluation Results
+## Evaluation Results
 
 ### Confusion Matrices
 - Model 2: ![Model 2 Confusion](Images/Model2_ConfusionMatrix.png)  
@@ -74,28 +74,28 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 
 ---
 
-## 🔌 Quick CLI Inference
+## Quick CLI Inference
 ```bash
 python src/predict.py path/to/image.png
 # or
 MODEL_PATH=models/malaria_vgg16.h5 python src/predict.py path/to/image.png
 ```
 
-## ⚙️ Reproducible Environment
+## Reproducible Environment
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements-lock.txt
 ```
 
-## 🛡️ CI
+## CI
 Minimal GitHub Actions workflow at `.github/workflows/ci.yml` runs ruff + smoke test.
 
-## 📑 Model Card
+## Model Card
 See **MODEL_CARD.md**.
 
 --
 
-## 📁 Repository Structure
+## Repository Structure
 
 Malaria-Detection-CNN-Capstone/
 │
@@ -129,7 +129,7 @@ Malaria-Detection-CNN-Capstone/
 └── MODEL_CARD.md # Documentation of data, metrics, risks, ethics
 
 --
-## 🚀 How to Run
+## How to Run
 1. Install requirements:
 ```bash
 pip install -r requirements.txt
@@ -139,8 +139,10 @@ pip install -r requirements.txt
 open notebooks/Capstone_Malaria_Detection.html
 ```
 
-## 📦 Dataset
+## Dataset
 Download from [Kaggle](https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria) if not included.
 
-## 👩‍🔬 Author
+## Author
 Gabrielle Foster – [LinkedIn](https://www.linkedin.com/in/gabriellefoster)
+
+## ⚠Research/educational purposes only. Not a clinical diagnostic tool.
