@@ -5,7 +5,22 @@
 This project demonstrates how deep learning can accelerate malaria diagnosis by automatically classifying red blood cell images as **Parasitized** or **Uninfected**. Using ~27,500 labeled microscopy tiles, I benchmarked multiple CNN architectures and achieved **92% test accuracy** with a **VGG16 transfer learning model**, maintaining high recall (93%) for parasitized cells — a clinical priority. The pipeline is designed for **reproducibility, deployment feasibility, and ethical transparency**, with model cards, CLI inference, and GitHub Actions CI included. This work was completed as part of the **MIT Applied Data Science Program Capstone (Aug 2025)**.
 
 ---
+## 📚 Table of Contents
+- [Dataset Overview](#-dataset-overview)
+- [Models Trained](#-models-trained)
+- [Results Summary](#-results-summary)
+- [Training Performance](#-training-performance)
+- [Evaluation Results](#-evaluation-results)
+- [CLI Inference](#-cli-inference)
+- [Reproducible Environment](#-reproducible-environment)
+- [Continuous Integration](#-continuous-integration)
+- [Model Card](#-model-card)
+- [Impact & Risks](#-impact--risks)
+- [Repository Structure](#-repository-structure)
+- [Author](#-author)
+- [License](#-license)
 
+---
 ## Dataset Overview
 
 - **Source:** NIH Malaria Dataset (27,558 thin smear RBC images)  
@@ -93,7 +108,7 @@ Minimal GitHub Actions workflow at `.github/workflows/ci.yml` runs ruff + smoke 
 ## Model Card
 See **MODEL_CARD.md**.
 
---
+---
 
 ## Repository Structure
 
@@ -128,7 +143,7 @@ Malaria-Detection-CNN-Capstone/
 │ └── ci.yml # GitHub Actions workflow (lint + smoke test)
 └── MODEL_CARD.md # Documentation of data, metrics, risks, ethics
 
---
+---
 ## How to Run
 1. Install requirements:
 ```bash
