@@ -92,6 +92,8 @@ Minimal GitHub Actions workflow at `.github/workflows/ci.yml` runs ruff + smoke 
 ## 📑 Model Card
 See **MODEL_CARD.md**.
 
+--
+
 ## 📁 Repository Structure
 
 Malaria-Detection-CNN-Capstone/
@@ -125,6 +127,7 @@ Malaria-Detection-CNN-Capstone/
 │ └── ci.yml # GitHub Actions workflow (lint + smoke test)
 └── MODEL_CARD.md # Documentation of data, metrics, risks, ethics
 
+--
 ## 🚀 How to Run
 1. Install requirements:
 ```bash
