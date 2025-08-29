@@ -15,10 +15,10 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 
 | Parasitized | Uninfected |
 |-------------|------------|
-| ![Parasitized](images/sample_parasitized.png) | ![Uninfected](images/sample_uninfected.png) |
+| ![Parasitized](Images/sample_parasitized.png) | ![Uninfected](Images/sample_uninfected.png) |
 
 **Class Balance:**  
-![Class Balance](images/Data_Balance_Checks.png)
+![Class Balance](Images/Data_Balance_Checks.png)
 
 ---
 
@@ -47,29 +47,29 @@ This project demonstrates how deep learning can accelerate malaria diagnosis by 
 ## 📈 Training Performance
 
 ### Individual Models
-- Model 1: ![Model 1 Accuracy](images/Model1_Accuracy-Validation_Curves.png)  
-- Model 2: ![Model 2 Accuracy](images/Model2_Accuracy-Validation_Curves.png)  
-- Model 3: ![Model 3 Accuracy](images/Model3_Accuracy-Validation_Curves.png)  
-- VGG16: ![VGG16 Accuracy](images/VGG16model_Accuracy-Validation_Curves.png)
+- Model 1: ![Model 1 Accuracy](Images/Model1_Accuracy-Validation_Curves.png)  
+- Model 2: ![Model 2 Accuracy](Images/Model2_Accuracy-Validation_Curves.png)  
+- Model 3: ![Model 3 Accuracy](Images/Model3_Accuracy-Validation_Curves.png)  
+- VGG16: ![VGG16 Accuracy](Images/VGG16model_Accuracy-Validation_Curves.png)
 
 ### All Models
-![All Models Accuracy](images/AllComparison_Accuracy-Validation_Curves.png)
+![All Models Accuracy](Images/AllComparison_Accuracy-Validation_Curves.png)
 
 ---
 
 ## ✅ Evaluation Results
 
 ### Confusion Matrices
-- Model 2: ![Model 2 Confusion](images/Model2_ConfusionMatrix.png)  
-- Model 3: ![Model 3 Confusion](images/Model3_ConfusionMatrix.png)  
-- VGG16: ![VGG16 Confusion](images/VGG16model_ConfusionMatrix.png)
+- Model 2: ![Model 2 Confusion](Images/Model2_ConfusionMatrix.png)  
+- Model 3: ![Model 3 Confusion](Images/Model3_ConfusionMatrix.png)  
+- VGG16: ![VGG16 Confusion](Images/VGG16model_ConfusionMatrix.png)
 
 **All Models Comparison:**  
-![All Models Confusion](images/AllComparison_ConfusionMatrix.png)
+![All Models Confusion](Images/AllComparison_ConfusionMatrix.png)
 
 ### ROC & Recall
-![ROC Curves](images/AllComparison_ROC_Curve.png)  
-![Recall Comparison](images/AllComparison_Recall.png)
+![ROC Curves](Images/AllComparison_ROC_Curve.png)  
+![Recall Comparison](Images/AllComparison_Recall.png)
 
 ---
 
@@ -107,7 +107,7 @@ Malaria-Detection-CNN-Capstone/
 │ └── predict.py # CLI inference script
 ├── models/
 │ └── .gitkeep # Placeholder (trained models go here, e.g. malaria_vgg16.h5)
-├── images/ # Visuals for README and analysis
+├── Images/ # Visuals for README and analysis
 │ ├── Data_Balance_Checks.png
 │ ├── Model1_Accuracy-Validation_Curves.png
 │ ├── Model2_Accuracy-Validation_Curves.png
